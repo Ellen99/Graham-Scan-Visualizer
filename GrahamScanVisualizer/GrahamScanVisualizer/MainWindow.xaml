@@ -1,0 +1,53 @@
+﻿<Window x:Class="GrahamScanVisualizer.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:GrahamScanVisualizer"
+        mc:Ignorable="d"
+        Title="Graham Scan Algorithm Visualizer" Height="800" Width="1022" ResizeMode="NoResize" WindowStartupLocation="CenterScreen">
+
+    <Grid Name="myGrid">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="557*"/>
+            <RowDefinition Height="214*"/>
+        </Grid.RowDefinitions>
+        <Canvas Name="canvas" Margin="0,0,0,41.8" MouseDown="Grid_PreviewMouseDown" Background="White"/>
+        <Canvas Name ="BottomCanvas" Margin="0,510,0,0" Background="#FF507C89" Grid.RowSpan="2">
+
+            <Button Name="RunButton" Background="#FF638F99" BorderBrush="Black" Content="Run the algorithm" Height="47" Click="RunButton_Click" FontFamily="Bahnschrift Light" FontSize="20" BorderThickness="0" Canvas.Left="782" Canvas.Top="198" Width="197" Foreground="White" />
+            <Button Name="AddPointsButton" Content="Add more Points" Visibility="Hidden" Background="#edeaf5" Width="131" Height="30" Click="AddPointsButton_Click" FontFamily="Bahnschrift Light" FontSize="16"  Canvas.Left="814" Canvas.Top="138" Foreground="#FF203F46" />
+
+            <Line X1="5" X2="270" Y1=" 70" Y2="70" Stroke="White" StrokeThickness="3"/>
+            <Line X1="5" X2="5" Y1=" 70" Y2="5" Stroke="White" StrokeThickness="3"/>
+            <Line X1="270" X2="270" Y1=" 70" Y2="5" Stroke="White" StrokeThickness="3"/>
+            <Line X1="5" X2="270" Y1=" 5" Y2="5" Stroke="White" StrokeThickness="3"/>
+
+            <TextBox x:Name ="randomPointsCount" Visibility="Visible" Background="White" Canvas.Left="200" Canvas.Top="27" Width="60" Height="20" PreviewTextInput="RandomPointsCount_PreviewTextInput" Foreground="#FF203F46"/>
+            <Button Name="Add_Random_Points" Background="White" Content="Generate random Points" Height="30" Click="Add_Random_Points_Click" FontFamily="Bahnschrift Light" FontSize="16"  Canvas.Left="15" Canvas.Top="23" Foreground="#FF1F3A42" BorderBrush="#FF5A8692" />
+
+            <Button Name="ErasePointsButton" Content="Erase points" Height="30" Background="White" Click="ErasePointsButton_Click" FontFamily="Bahnschrift Light" FontSize="16" Canvas.Left="100" Canvas.Top="215" Foreground="#FF1F3A42" RenderTransformOrigin="0.474,0.9"  />
+
+            <Line X1="5" X2="270" Y1="90" Y2="90" Stroke="White" StrokeThickness="3"/>
+            <Line X1="5" X2="5" Y1=" 90" Y2="190" Stroke="White" StrokeThickness="3"/>
+            <Line X1="270" X2="270" Y1=" 90" Y2="190" Stroke="White" StrokeThickness="3"/>
+            <Line X1="5" X2="270" Y1="190" Y2="190" Stroke="White" StrokeThickness="3"/>
+
+            <Label Content="input X value&#xA;    [0:1000]" Canvas.Left="42" Canvas.Top="138" FontSize="8" Foreground="White"/>
+            <Label Content="input Y value&#xA;    [0:500]" Canvas.Left="173" Canvas.Top="138" FontSize="8" Foreground="White"/>
+            <Button Name="AddPointWithCoordinatesButton" Background="White" Content="Input coordinates and click to add a point" Visibility="Visible" Height="30" Click="AddPointWithCoordinatesButton_Click" FontFamily="Bahnschrift Light" FontSize="13" Canvas.Left="13" Canvas.Top="103" Width="250" Foreground="#FF1F3A42" />
+            <TextBox Name ="XtextBox" Visibility="Visible" Background="White" Canvas.Left="42" Canvas.Top="163" Width="60" Height="20" PreviewTextInput="XtextBox_PreviewTextInput" Foreground="#FF203F46"/>
+            <TextBox x:Name ="YtextBox" Visibility="Visible" Background="White" Canvas.Left="173" Canvas.Top="163" Width="60" Height="20" PreviewTextInput="YtextBox_PreviewTextInput" Foreground="#FF203F46"/>
+
+            <Label   Name="pointsLabel" Content="Initial points set" Canvas.Left="357" Canvas.Top="8" Width="138" Height="32" FontFamily="Bahnschrift Light" FontSize="16" Foreground="White" />
+            <TextBox Name="textBox" Canvas.Left="380" Background="White" Canvas.Top="38" TextWrapping="Wrap" Width="80"  Height="207" FontSize="12" FontFamily="Bahnschrift Light" IsReadOnly="True" ScrollViewer.VerticalScrollBarVisibility="Auto" Foreground="#FF203F46" />
+
+            <Label   Name="resultLabel" Content="Result points set" Canvas.Left="554" Canvas.Top="11" Width="138" Height="32" FontFamily="Bahnschrift Light" FontSize="16" Foreground="White"/>
+            <TextBox Name="resultTextBox" Canvas.Left="575" Background="White" Canvas.Top="38" TextWrapping="Wrap" Width="80" Height="207" FontSize="12" FontFamily="Bahnschrift Light"  IsReadOnly="True" ScrollViewer.VerticalScrollBarVisibility="Auto" Foreground="#FF203F46" />
+            <Slider Name="speed" Height="42" Canvas.Left="782" Canvas.Top="114" Width="197" Minimum="0" Maximum="1"/>
+            <Label   x:Name="algorithmSpeed_Label" Content="Visualization speed" Canvas.Left="799" Canvas.Top="82" Width="165" Height="32" FontFamily="Bahnschrift Light" FontSize="16" Foreground="White"/>
+
+
+        </Canvas>
+    </Grid>
+</Window>

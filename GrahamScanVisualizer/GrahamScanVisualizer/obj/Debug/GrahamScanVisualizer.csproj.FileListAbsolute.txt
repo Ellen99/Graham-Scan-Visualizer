@@ -1,0 +1,15 @@
+C:\Users\Elen\source\repos\GrahamScanVisualizer\GrahamScanVisualizer\bin\Debug\GrahamScanVisualizer.exe.config
+C:\Users\Elen\source\repos\GrahamScanVisualizer\GrahamScanVisualizer\bin\Debug\GrahamScanVisualizer.exe
+C:\Users\Elen\source\repos\GrahamScanVisualizer\GrahamScanVisualizer\bin\Debug\GrahamScanVisualizer.pdb
+C:\Users\Elen\source\repos\GrahamScanVisualizer\GrahamScanVisualizer\obj\Debug\GrahamScanVisualizer.csprojAssemblyReference.cache
+C:\Users\Elen\source\repos\GrahamScanVisualizer\GrahamScanVisualizer\obj\Debug\MainWindow.g.cs
+C:\Users\Elen\source\repos\GrahamScanVisualizer\GrahamScanVisualizer\obj\Debug\App.g.cs
+C:\Users\Elen\source\repos\GrahamScanVisualizer\GrahamScanVisualizer\obj\Debug\GrahamScanVisualizer_MarkupCompile.cache
+C:\Users\Elen\source\repos\GrahamScanVisualizer\GrahamScanVisualizer\obj\Debug\GrahamScanVisualizer_MarkupCompile.lref
+C:\Users\Elen\source\repos\GrahamScanVisualizer\GrahamScanVisualizer\obj\Debug\MainWindow.baml
+C:\Users\Elen\source\repos\GrahamScanVisualizer\GrahamScanVisualizer\obj\Debug\GrahamScanVisualizer.g.resources
+C:\Users\Elen\source\repos\GrahamScanVisualizer\GrahamScanVisualizer\obj\Debug\GrahamScanVisualizer.Properties.Resources.resources
+C:\Users\Elen\source\repos\GrahamScanVisualizer\GrahamScanVisualizer\obj\Debug\GrahamScanVisualizer.csproj.GenerateResource.cache
+C:\Users\Elen\source\repos\GrahamScanVisualizer\GrahamScanVisualizer\obj\Debug\GrahamScanVisualizer.csproj.CoreCompileInputs.cache
+C:\Users\Elen\source\repos\GrahamScanVisualizer\GrahamScanVisualizer\obj\Debug\GrahamScanVisualizer.exe
+C:\Users\Elen\source\repos\GrahamScanVisualizer\GrahamScanVisualizer\obj\Debug\GrahamScanVisualizer.pdb
